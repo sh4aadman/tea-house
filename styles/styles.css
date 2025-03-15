@@ -14,6 +14,17 @@ body {
 #welcome {
     margin-top: 5%;
     /* will change accordingly to screen-size */
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 142px;
+}
+
+#text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  align-items: flex-start;
 }
 
 #text h1 {
@@ -27,3 +38,57 @@ body {
   color: #777777;
 }
 
+#images {
+  width: 50%;
+  position: relative;
+}
+
+#images > figure > img {
+  width: 100%;
+}
+
+#rating {
+  width: max-content;
+  position: relative;
+  top: -130px;
+  left: 120px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.6);
+  padding: 18px 28px;
+}
+
+#rating > i {
+  color: #FFC850;
+  font-size: 48px;
+}
+
+#rating > span > h3 {
+  font-weight: 800;
+  font-size: 30px;
+  color: #1C1C1C;
+}
+
+#rating > span > p {
+  font-weight: 600;
+  color: #777777;
+}
+
+.primary-button {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-image: linear-gradient(to right, #FF8938, #FF0000);
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.primary-button > span {
+  margin-left: 10px;
+}
