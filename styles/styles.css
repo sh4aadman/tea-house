@@ -133,7 +133,7 @@ body {
 
 .user-occupation {
   line-height: 1.75;
-  color: #5D5A6F;
+  color: #5d5a6f;
 }
 
 .one {
@@ -145,7 +145,7 @@ body {
 
 .two {
   position: relative;
-  z-index: 4;  
+  z-index: 4;
 }
 
 .three {
@@ -193,14 +193,15 @@ body {
 
 .grid-container {
   display: grid;
-  gap: 24px;
 }
 
 .four-column {
+  gap: 24px;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .three-column {
+  gap: 24px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -270,6 +271,115 @@ body {
   text-decoration: none;
 }
 
+footer {
+  background-image: linear-gradient(to right, #ff89381a, #ff00001a);
+  padding: 130px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 104px;
+}
+
+.full-width {
+  --bg-color: linear-gradient(#e66465, #9198e5);
+  box-shadow: 0 0 0 100vmax var(--bg-color);
+  clip-path: inset(0 -100vmax);
+}
+
+.logo {
+  width: 62px;
+  height: 64px;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+.quick-links {
+  gap: 172px;
+  grid-template-columns: repeat(3, 1fr) 300px;
+  padding-bottom: 60px;
+}
+
+.grid-item-links > h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1c1c1c;
+  padding-bottom: 22px;
+}
+
+.links, .social-links {
+  list-style: none;
+}
+
+.links li {
+  padding-bottom: 18px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.subscription {
+  margin-right: 20px;
+}
+
+#subscription-message {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.67;
+  color: #1c1c1c;
+  margin-bottom: 40px;
+}
+
+input[type="text"] {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid black ;
+  background: transparent;
+  padding-bottom: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+#subscribe::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-image: linear-gradient(to right, #ff8938, #ff0000);
+}
+
+.social-links {
+  color: #494949;
+  display: flex;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.footer-end {
+  color: #494949;
+  text-align: center;
+}
+
 .primary-button {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -277,13 +387,21 @@ body {
   font-size: 18px;
   color: #ffffff;
   background-image: linear-gradient(to right, #ff8938, #ff0000);
-  padding: 18px 20px;
   border-radius: 10px;
   border: none;
 }
 
 .primary-button > span {
   margin-left: 10px;
+}
+
+#text > button {
+  padding: 18px 20px;
+}
+
+.footer-paragraph button {
+  padding: 15px 25px;
+  margin-left: 40px;
 }
 
 .secondary-button {
