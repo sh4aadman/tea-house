@@ -83,6 +83,84 @@ body {
   margin-bottom: 142px;
 }
 
+#product-description {
+  display: flex;
+  gap: 52px;
+  margin-bottom: 142px;
+}
+
+#product-images {
+  width: 50%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(135px, auto);
+}
+
+#product-images figure {
+  display: flex;
+  justify-content: center;
+}
+
+#empty-one,
+#empty-two,
+.img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#empty-one {
+  background-image: linear-gradient(to right, #ff00001a, #ff89381a);
+}
+
+#empty-two {
+  background-image: linear-gradient(to right, #d9d9d9, #ffffff);
+}
+
+.img {
+  height: 355px;
+  grid-row: span 2;
+  padding: 30px;
+}
+
+.f-one {
+  background-color: #e6a6231a;
+}
+
+.f-two {
+  background-color: #5776391a;
+}
+
+#product-texts {
+  width: 50%;
+}
+
+#product-texts > h2 {
+  font-weight: 800;
+  font-size: 45px;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+#product-texts > h3 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#product-texts p {
+  line-height: 1.75;
+  color: #777777;
+}
+
+#product-texts > p:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+#product-texts > p:nth-child(4) {
+  margin-bottom: 20px;
+}
+
 #reviews {
   background-image: linear-gradient(to right, #ff8938, #ff0000);
   display: flex;
@@ -311,7 +389,8 @@ footer {
   padding-bottom: 22px;
 }
 
-.links, .social-links {
+.links,
+.social-links {
   list-style: none;
 }
 
@@ -341,7 +420,7 @@ input[type="text"] {
   font-optical-sizing: auto;
   width: 80%;
   border: none;
-  border-bottom: 1px solid black ;
+  border-bottom: 1px solid black;
   background: transparent;
   padding-bottom: 20px;
 }
